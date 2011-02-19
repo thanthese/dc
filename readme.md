@@ -1,6 +1,8 @@
 ### What is `dc`?
 
-From the [wikipedia](http://en.wikipedia.org/wiki/Dc_(computer_program) ) article:
+From the [wikipedia][wikidc] article:
+
+[wikidc]: http://en.wikipedia.org/wiki/Dc_(computer_program)
 
 > `dc` is a cross-platform reverse-polish desk calculator which supports arbitrary-precision arithmetic. It is one of the oldest Unix utilities, predating even the invention of the C programming language; like other utilities of that vintage, it has a powerful set of features but an extremely terse syntax.
 
