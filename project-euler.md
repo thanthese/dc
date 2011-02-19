@@ -1,13 +1,14 @@
 # practice problems
 
-" counting down from 4
-[ d      # save top stack value for posterity
-1-       # decrement top number
-d0<r]sr  # recurse if number is still greater than 0
-4lrx     # initialize and run macro
-f        # print resulting stack
+counting down from 4
 
-[d1-d0<r]sr4lrxf # single line version
+    [ d      # save top stack value for posterity
+    1-       # decrement top number
+    d0<r]sr  # recurse if number is still greater than 0
+    4lrx     # initialize and run macro
+    f        # print resulting stack
+
+    [d1-d0<r]sr4lrxf # single line version
 
 " factorial of 10
 [d1-d1<r*]sr10lrxp
