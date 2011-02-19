@@ -24,10 +24,6 @@ No, not in the least.
 
 Because there's something oddly appealing about a "language" more opaque than perl.
 
-## What nutty conventions are you following?
-
-The document itself follows a mostly markdown format.  This created a problem because `dc`'s `#` comments conflicted with markdown's `#` headers.  Thus we have a mixed system: `dc` code to be evaluated uses `#` comments, and all other explanatory text leads with `"`.  Lines of `dc` that are meant to be executed together are grouped together with no vertical whitespace.
-
 ## How do I run the examples?
 
 `dc` from a terminal to start interactive mode, then just copy and paste.  (Avoid the lines leading with `"`s.)
