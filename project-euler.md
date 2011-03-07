@@ -70,6 +70,12 @@ Pretty version
     i: index, test against target
     m: current max prime
 
+    [  # main
+      li1+si    # i++
+      ltli%0=R  # if divisible, reduce target
+      lilt>M    # if target > i, recurse
+    ]sM
+
     [  # reduce target
       lilm<P   # if i is greater than max, set as new max
       ltli/st  # set new t
@@ -79,12 +85,6 @@ Pretty version
     [  # set new max prime
       lism
     ]sP
-
-    [  # main
-      li1+si    # i++
-      ltli%0=R  # if divisible, reduce target
-      lilt>M    # if target > i, recurse
-    ]sM
 
     600851475143st  # Initalize t
     1sm             # Initalize m
