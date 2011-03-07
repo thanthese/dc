@@ -26,4 +26,4 @@ Because there's something oddly appealing about a "language" more opaque than pe
 
 ## How do I run the examples?
 
-`dc` from a terminal to start interactive mode, then just copy and paste.  (Avoid the lines leading with `"`s.)
+`dc` from a terminal to start interactive mode, then just copy and paste.
