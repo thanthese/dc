@@ -56,9 +56,43 @@ Short version
 
     [lblalb+lrx]sf[lblt+st]ss[sbsalb2%0=slalb+4000000!<f]sr1 1 0stlrxltf
 
-# Euler Problem 3 (unsolved)
+# Euler Problem 3
 > The prime factors of 13195 are 5, 7, 13 and 29.
 >
 > What is the largest prime factor of the number 600851475143 ?
 >
 > (Answer: 6857)
+
+Pretty version
+
+    Variables:
+    t: target number
+    i: index, test against target
+    m: current max prime
+
+    [  # reduce target
+      lilm<P   # if i is greater than max, set as new max
+      ltli/st  # set new t
+      1si      # reset index
+    ]sR
+
+    [  # set new max prime
+      lism
+    ]sP
+
+    [  # main
+      li1+si    # i++
+      ltli%0=R  # if divisible, reduce target
+      lilt>M    # if target > i, recurse
+    ]sM
+
+    600851475143st  # Initalize t
+    1sm             # Initalize m
+    1si             # Initalize i
+
+    lMx  # run main
+    lmp  # print max
+
+Short version
+
+    [lilm<Pltli/st1si]sR[lism]sP[li1+siltli%0=Rlilt>M]sM600851475143st1sm1silMxlmp
